@@ -179,7 +179,7 @@ export default function ContactWithFooter() {
                     {/* Company Info Header */}
                     <div className="text-center mb-10 lg:mb-12">
                         <h3 className="text-3xl lg:text-4xl font-bold text-white mb-3">
-                            ASP Automation
+                            Abid Supportindo Pratama
                         </h3>
                         <p className="text-white/70 text-base lg:text-lg">
                             Your Industrial Automation Partner
