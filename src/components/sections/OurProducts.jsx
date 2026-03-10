@@ -59,6 +59,7 @@ export default function OurProducts({
             ],
             detailedSpecs: [
                 {
+                    id: "advantech-acp-4320",
                     model: "Advantech ACP-4320",
                     features: [
                         "Supports either an ATX motherboard or a PICMG backplane with up to 15 slots",
@@ -69,6 +70,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "advantech-ppc-6171c",
                     model: "Advantech PPC-6171C-RTAE",
                     features: [
                         "17\" true-flat PPC with Resistive touch",
@@ -79,6 +81,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "advantech-uno-247",
                     model: "Advantech UNO-247",
                     features: [
                         "Intel® Processor N97",
@@ -90,6 +93,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "advantech-ipc-510",
                     model: "Advantech IPC-510",
                     features: [
                         "Most cost-effective rackmount chassis",
@@ -99,6 +103,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "advantech-mic-7700h",
                     model: "Advantech MIC-7700H-00A2",
                     features: [
                         "Intel® 6th/7th Generation Core i Desktop CPU (LGA1151) with Q170/H110 chipset",
@@ -125,6 +130,7 @@ export default function OurProducts({
             ],
             detailedSpecs: [
                 {
+                    id: "ablerex-ms-ii-ssax",
                     model: "Ablerex MS II SSAX",
                     features: [
                         "Simple Parallel Installation",
@@ -140,6 +146,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "ablerex-kronos-40",
                     model: "Ablerex Kronos 40 40KVA / 40KW",
                     features: [
                         "Up to 95% efficiency in online mode",
@@ -155,6 +162,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "abb-powerscale-3-3",
                     model: "ABB Powerscale 3-3",
                     features: [
                         "System power range: 10 kVA – 1000 kVA",
@@ -166,6 +174,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "abb-ztx-series",
                     model: "ABB ZTx SERIES",
                     features: [
                         "Online double conversion",
@@ -195,6 +204,7 @@ export default function OurProducts({
             ],
             detailedSpecs: [
                 {
+                    id: "vivotek-ib9368ht",
                     model: "Vivotek IB9368HT Bullet Network Camera",
                     features: [
                         "WDR Pro for Unparalleled Visibility",
@@ -205,6 +215,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "vivotek-ib9383-htv",
                     model: "Vivotek IB9383-HTV Bullet AI Camera",
                     features: [
                         "WDR Pro for Unparalleled Visibility",
@@ -215,6 +226,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "vivotek-tb9333e",
                     model: "Vivotek TB9333E Thermal Camera",
                     features: [
                         "Bi-spectrum Thermal with 256 x 192 thermal & 4MP",
@@ -225,6 +237,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "vivotek-it9380-hv-v2",
                     model: "Vivotek IT9380-HV-V2 Turret AI Camera",
                     features: [
                         "Detect people & vehicles with Vision Object Analytics",
@@ -235,6 +248,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "vivotek-ib9387-lprv3",
                     model: "Vivotek IB9387-LPRV3 License Plate Recognition",
                     features: [
                         "Integrated with VAST2/VSS and 3rd parties",
@@ -259,6 +273,7 @@ export default function OurProducts({
             ],
             detailedSpecs: [
                 {
+                    id: "netviel-fo-cable",
                     model: "Netviel Fiber Optic Cable",
                     features: [
                         "Fiber Count up to 144",
@@ -270,6 +285,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "netviel-sfp-transceiver",
                     model: "Netviel SFP Optical Transceiver",
                     features: [
                         "850nm or 1310nm wavelength",
@@ -284,6 +300,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "netviel-nvl-otb",
                     model: "Netviel NVL-OTB-WM-24/4-SM-SC-S",
                     features: [
                         "Rugged Case with High Security",
@@ -295,6 +312,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "netviel-nvl-mc",
                     model: "Netviel NVL-MC-SM100-SC",
                     features: [
                         "Complies with IEEE 802.3 10 Base-T standard",
@@ -307,6 +325,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "yokogawa-aq1000",
                     model: "Yokogawa AQ1000 OTDR",
                     features: [
                         "Wavelengths: 1310 / 1550 nm",
@@ -320,6 +339,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "fujikura-fsm41s",
                     model: "Fujikura Fusion Splicer FSM41S",
                     features: [
                         "Warm Splice Imaging (WSI) loss estimation technology",
@@ -347,6 +367,7 @@ export default function OurProducts({
             ],
             detailedSpecs: [
                 {
+                    id: "eki-7710g",
                     model: "Advantech EKI-7710G-2CPI-BE",
                     features: [
                         "8 x IEEE 802.3 af/at PoE Gigabit ports + 2 x Gigabit Copper/SFP combo ports",
@@ -360,6 +381,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "eki-5729pi",
                     model: "Advantech EKI-5729PI-AE",
                     features: [
                         "Full Gigabit Ethernet ports and IEEE 802.3af/at PoE standard",
@@ -373,6 +395,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "eki-5525i",
                     model: "Advantech EKI-5525I-AE",
                     features: [
                         "Communicates with SCADA software via Modbus/TCP",
@@ -387,6 +410,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "moxa-eds-205",
                     model: "Moxa EDS-205",
                     features: [
                         "10/100BaseT(X) (RJ45 connector)",
@@ -411,6 +435,7 @@ export default function OurProducts({
             ],
             detailedSpecs: [
                 {
+                    id: "eki-1511",
                     model: "Advantech EKI-1511",
                     features: [
                         "1 x 10/100 Mbps Ethernet port",
@@ -424,6 +449,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "eki-1528i",
                     model: "Advantech EKI-1528I-DR-AE",
                     features: [
                         "2 x 10/100 Mbps Ethernet ports for LAN redundancy",
@@ -438,6 +464,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "eki-1361",
                     model: "Advantech EKI-1361",
                     features: [
                         "Link any serial device to IEEE 802.11 a/b/g/n network",
@@ -451,6 +478,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "ecu-1051tl",
                     model: "Advantech ECU-1051TL-R10AAE",
                     features: [
                         "TI Cortex A8 600MHz CPU with DDR3L 256MB RAM",
@@ -463,6 +491,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "moxa-mgate-mb3180",
                     model: "Moxa MGATE MB3180",
                     features: [
                         "Auto Device Routing for easy configuration",
@@ -474,6 +503,7 @@ export default function OurProducts({
                     ]
                 },
                 {
+                    id: "moxa-nport-5150a",
                     model: "Moxa NPort 5150A",
                     features: [
                         "IEEE 802.3af-compliant PoE power device equipment",
@@ -512,12 +542,12 @@ export default function OurProducts({
                 <div className="w-full max-w-7xl">
                     {/* Custom grid layout: 4 cards in first row, 3 in second row */}
                     <div className="flex flex-col gap-6 lg:gap-8">
-                        {/* First row - 4 cards */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-                            {products.slice(0, 4).map((product, index) => (
+                        {/* First row - 3 cards */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                            {products.map((product, index) => (
                                 <div
                                     key={product.title}
-                                    className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col"
+                                    className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col last:lg:col-start-2"
                                 >
                                     {/* Card Image */}
                                     <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
@@ -555,15 +585,6 @@ export default function OurProducts({
 
                                         {/* CTA Buttons */}
                                         <div className="mt-6 space-y-3">
-                                            {/* Product Info Button - Commented out */}
-                                            {/* <a
-                                                href={product.title === 'Supervisory Control and Data Acquisition' ? 'https://wa.me/6282139940054' : product.link}
-                                                className="block w-full bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white py-3 px-6 rounded-lg font-semibold hover:from-jmso-tosca hover:to-jmso-dark-blue transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 text-center"
-                                            >
-                                                {product.title === 'Supervisory Control and Data Acquisition' ? 'Consult Now' : 'Product Info'}
-                                            </a> */}
-
-                                            {/* Product Spec Button or Consult Now for SCADA */}
                                             {product.title === 'Supervisory Control and Data Acquisition' ? (
                                                 <a
                                                     href="https://wa.me/6282139940054"
@@ -574,83 +595,7 @@ export default function OurProducts({
                                             ) : (
                                                 <button
                                                     onClick={() => setSelectedProduct(product)}
-                                                    className="w-full bg-white text-jmso-tosca border-2 border-jmso-tosca py-3 px-6 rounded-lg font-semibold hover:bg-jmso-tosca hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
-                                                >
-                                                    Product Spec
-                                                </button>
-                                            )}
-                                        </div>
-                                    </div>
-
-                                    {/* Decorative Corner */}
-                                    <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-jmso-dark-blue/10 to-transparent rounded-bl-full"></div>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Second row - 3 cards (centered) */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto w-full">
-                            {products.slice(4, 7).map((product, index) => (
-                                <div
-                                    key={product.title}
-                                    className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col"
-                                >
-                                    {/* Card Image */}
-                                    <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
-                                        {product.title === 'Supervisory Control and Data Acquisition'
-                                            ? <FadeSlider imgs={product.imgs} imgZoomType="zoom-out" client:load />
-                                            : <FadeSlider imgs={product.imgs} imgZoomType="zoom-in" client:load />
-                                        }
-                                        <div className="absolute inset-0 bg-gradient-to-t from-jmso-dark-blue/75 to-transparent"></div>
-                                    </div>
-
-                                    {/* Card Content */}
-                                    <div className="p-6 flex flex-col flex-1">
-                                        <div className="flex-grow">
-                                            <h3 className="text-xl font-bold text-jmso-dark-blue mb-3">
-                                                {product.title}
-                                            </h3>
-                                            <p className="text-gray-600 text-sm mb-4 leading-relaxed">
-                                                {product.description}
-                                            </p>
-
-                                            {/* Key Specs */}
-                                            <div className="space-y-2">
-                                                {product.keySpecs.map((spec, idx) => (
-                                                    <div key={idx} className="flex items-start gap-2">
-                                                        <CheckCircle
-                                                            size={24}
-                                                            weight="fill"
-                                                            className="text-jmso-tosca mt-1 flex-shrink-0"
-                                                        />
-                                                        <span className="text-sm text-gray-700">{spec}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-
-                                        {/* CTA Buttons */}
-                                        <div className="mt-6 space-y-3">
-                                            {/* Product Info Button - Commented out */}
-                                            {/* <a
-                                                href={product.title === 'Supervisory Control and Data Acquisition' ? 'https://wa.me/6282139940054' : product.link}
-                                                className="block w-full bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white py-3 px-6 rounded-lg font-semibold hover:from-jmso-tosca hover:to-jmso-dark-blue transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 text-center"
-                                            >
-                                                {product.title === 'Supervisory Control and Data Acquisition' ? 'Consult Now' : 'Product Info'}
-                                            </a> */}
-
-                                            {/* Product Spec Button or Consult Now for SCADA */}
-                                            {product.title === 'Supervisory Control and Data Acquisition' ? (
-                                                <a
-                                                    href="https://wa.me/6282139940054"
-                                                    className="block w-full bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white py-3 px-6 rounded-lg font-semibold hover:from-jmso-tosca/90 hover:to-jmso-dark-blue/90 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 text-center"
-                                                >
-                                                    Consult Now
-                                                </a>
-                                            ) : (
-                                                <button
-                                                    onClick={() => setSelectedProduct(product)}
-                                                    className="w-full bg-white text-jmso-tosca border-2 border-jmso-tosca py-3 px-6 rounded-lg font-semibold hover:bg-jmso-tosca hover:text-white transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                                                    className="w-full bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white py-3 px-6 rounded-lg font-semibold hover:from-jmso-tosca/90 hover:to-jmso-dark-blue/90 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 text-center"
                                                 >
                                                     Product Spec
                                                 </button>
@@ -719,12 +664,12 @@ export default function OurProducts({
                                                 </div>
 
                                                 {/* Right Column - Specifications */}
-                                                <div className="p-6 bg-white">
+                                                <div className="p-6 bg-white flex flex-col">
                                                     <h5 className="text-sm font-bold text-jmso-dark-blue uppercase tracking-wider mb-4 flex items-center gap-2">
                                                         <div className="w-1 h-5 bg-jmso-tosca rounded-full"></div>
                                                         Specifications
                                                     </h5>
-                                                    <div className="space-y-3">
+                                                    <div className="space-y-3 flex-grow">
                                                         {spec.features.map((feature, featureIdx) => (
                                                             <div key={featureIdx} className="flex items-start gap-3 group">
                                                                 <CheckCircle
@@ -738,6 +683,13 @@ export default function OurProducts({
                                                             </div>
                                                         ))}
                                                     </div>
+                                                    {/* Learn More — always shown */}
+                                                    <a
+                                                        href={`/models/${spec.id}`}
+                                                        className="block w-full bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white mt-6 py-3 px-6 rounded-lg font-semibold hover:from-jmso-tosca/90 hover:to-jmso-dark-blue/90 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 text-center"
+                                                    >
+                                                        Learn More
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
