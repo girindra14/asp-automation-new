@@ -5,20 +5,51 @@ import { X } from "lucide-react";
 import IPC1 from "../../assets/images/our-products/ipc/ipc_1.png";
 import IPC2 from "../../assets/images/our-products/ipc/ipc_2.png";
 import IPC3 from "../../assets/images/our-products/ipc/ipc_3.png";
-import IPCDatasheet from "../../assets/images/our-products/ipc/ipc-datasheet.pdf";
+import advantech_acp_4320 from "../../assets/images/our-products/ipc/advantech_acp_4320.png";
+import advantech_ppc_6171c from "../../assets/images/our-products/ipc/advantech_ppc_6171c.png";
+import advantech_uno_247 from "../../assets/images/our-products/ipc/advantech_uno_247.png";
+import advantech_ipc_510 from "../../assets/images/our-products/ipc/advantech_ipc_510.png";
+import advantech_mic_7700h from "../../assets/images/our-products/ipc/advantech_mic_7700h.png";
 import UPS1 from "../../assets/images/our-products/ups/ups_1.png";
 import UPS2 from "../../assets/images/our-products/ups/ups_2.png";
 import UPS3 from "../../assets/images/our-products/ups/ups_3.png";
-import UPSDatasheet from "../../assets/images/our-products/ups/ups-datasheet.pdf";
+import abb_powerscale_33 from "../../assets/images/our-products/ups/abb_powerscale_33.png";
+import abb_ztx_series from "../../assets/images/our-products/ups/abb_ztx_series.png";
+import ablerex_kronos_40 from "../../assets/images/our-products/ups/ablerex_kronos_40.png";
+import ablerex_ms_ii_ssax from "../../assets/images/our-products/ups/ablerex_ms_ii_ssax.png";
 import CCTV1 from "../../assets/images/our-products/cctv/cctv_1.png";
 import CCTV2 from "../../assets/images/our-products/cctv/cctv_2.png";
 import CCTV3 from "../../assets/images/our-products/cctv/cctv_3.png";
-import AICCTVDatasheet from "../../assets/images/our-products/cctv/ai-cctv-datasheet.pdf";
+import vivotek_ib9368ht from "../../assets/images/our-products/cctv/vivotek_ib9368ht.png";
+import vivotek_ib9383_htv from "../../assets/images/our-products/cctv/vivotek_ib9383_htv.png";
+import vivotek_tb9333e from "../../assets/images/our-products/cctv/vivotek_tb9333e.png";
+import vivotek_it9380_hv_v2 from "../../assets/images/our-products/cctv/vivotek_it9380_hv_v2.png";
+import vivotek_ib9387_lprv3 from "../../assets/images/our-products/cctv/vivotek_ib9387_lprv3.png";
 import FO1 from "../../assets/images/our-products/fo/fo_1.png";
-import FODatasheet from "../../assets/images/our-products/fo/fo-datasheet.pdf";
+import FO2 from "../../assets/images/our-products/fo/fo_2.png";
+import FO3 from "../../assets/images/our-products/fo/fo_3.png";
+import fujikura_fsm41s from "../../assets/images/our-products/fo/fujikura_fsm41s.png";
+import netviel_fo_cable from "../../assets/images/our-products/fo/netviel_fo_cable.png";
+import netviel_nvl_mc from "../../assets/images/our-products/fo/netviel_nvl_mc.png";
+import netviel_nvl_otb from "../../assets/images/our-products/fo/netviel_nvl_otb.png";
+import netviel_sfp_transceiver from "../../assets/images/our-products/fo/netviel_sfp_transceiver.png";
+import yokogawa_aq1000 from "../../assets/images/our-products/fo/yokogawa_aq1000.png";
 import ISG1 from "../../assets/images/our-products/isg/isg_1.png";
 import ISG2 from "../../assets/images/our-products/isg/isg_2.png";
-import ISGDatasheet from "../../assets/images/our-products/isg/isg-datasheet.pdf";
+import ISG3 from "../../assets/images/our-products/isg/isg_3.png";
+import eki_7710g from "../../assets/images/our-products/isg/eki_7710g.png";
+import eki_5729pi from "../../assets/images/our-products/isg/eki_5729pi.png";
+import eki_5525i from "../../assets/images/our-products/isg/eki_5525i.png";
+import moxa_eds_205 from "../../assets/images/our-products/isg/moxa_eds_205.png";
+import IC1 from "../../assets/images/our-products/ic/ic_1.png";
+import IC2 from "../../assets/images/our-products/ic/ic_2.png";
+import IC3 from "../../assets/images/our-products/ic/ic_3.png";
+import eki_1511 from "../../assets/images/our-products/ic/eki_1511.png";
+import eki_1528i from "../../assets/images/our-products/ic/eki_1528i.png";
+import eki_1361 from "../../assets/images/our-products/ic/eki_1361.png";
+import ecu_1051tl from "../../assets/images/our-products/ic/ecu_1051tl.png";
+import moxa_mgate_mb3180 from "../../assets/images/our-products/ic/moxa_mgate_mb3180.png";
+import moxa_nport_5150a from "../../assets/images/our-products/ic/moxa_nport_5150a.png";
 import SCADA1 from "../../assets/images/our-products/scada/scada_1.png";
 import SCADA2 from "../../assets/images/our-products/scada/scada_2.png";
 import SCADA3 from "../../assets/images/our-products/scada/scada_3.png";
@@ -61,62 +92,29 @@ export default function OurProducts({
                 {
                     id: "advantech-acp-4320",
                     model: "Advantech ACP-4320",
-                    features: [
-                        "Supports either an ATX motherboard or a PICMG backplane with up to 15 slots",
-                        "Supports dual SATA hot-swap HDD trays",
-                        "LED indicators and alarm notification for system fault detection",
-                        "Low noise system fans",
-                        "Built-in Intelligent System Module enabling whole system fan control and remote manageability"
-                    ]
+                    img: advantech_acp_4320,
                 },
                 {
                     id: "advantech-ppc-6171c",
                     model: "Advantech PPC-6171C-RTAE",
-                    features: [
-                        "17\" true-flat PPC with Resistive touch",
-                        "Supports certified mini-ITX motherboard up to 65W TDP processor",
-                        "Support PCI or PCIe expansion slot",
-                        "Front LED indicators for power status",
-                        "Front panel is IP66 compliant"
-                    ]
+                    img: advantech_ppc_6171c,
                 },
                 {
                     id: "advantech-uno-247",
                     model: "Advantech UNO-247",
-                    features: [
-                        "Intel® Processor N97",
-                        "Flexible iDoor expansion design with sufficient IO port",
-                        "4 x GbE, 2 x USB3.2, 2 x USB2.0, 2 x RS232/422/485, 4 x RS485, 1 x HDMI, 1 x VGA, 2 x GPIO",
-                        "Compact size with fanless design",
-                        "Optional 4G/GPS/GPRS/Wi-Fi communication",
-                        "Wide Operating temperature: -40 ~ 70°C"
-                    ]
+                    img: advantech_uno_247,
                 },
                 {
                     id: "advantech-ipc-510",
                     model: "Advantech IPC-510",
-                    features: [
-                        "Most cost-effective rackmount chassis",
-                        "Supports PS/2 single power supply",
-                        "Easy-to-install front-accessible drive bays hold 3 x 5.25\" and 2 x 3.5\" drives",
-                        "Front-accessible USB and PS/2 interfaces"
-                    ]
+                    img: advantech_ipc_510,
                 },
                 {
                     id: "advantech-mic-7700h",
                     model: "Advantech MIC-7700H-00A2",
-                    features: [
-                        "Intel® 6th/7th Generation Core i Desktop CPU (LGA1151) with Q170/H110 chipset",
-                        "2 x RS-232/422/485 and 4 x RS232 serial ports",
-                        "1 x 2.5\" HDD, 1 x CFast, 1x mSATA and 1 mini-PCIe with SIM",
-                        "Supports 2 LAN, Isolation COM, 32-bit GPIO modules",
-                        "VGA and DVI output",
-                        "9 ~ 36 V DC input power range",
-                        "Wide operating temperature"
-                    ]
+                    img: advantech_mic_7700h,
                 }
             ],
-            link: IPCDatasheet
         },
         {
             title: "Uninterruptible Power Supply",
@@ -132,65 +130,24 @@ export default function OurProducts({
                 {
                     id: "ablerex-ms-ii-ssax",
                     model: "Ablerex MS II SSAX",
-                    features: [
-                        "Simple Parallel Installation",
-                        "Full-time Digital Signal Processor Control",
-                        "Frequency Converter Operation Mode",
-                        "Smart ECO Mode",
-                        "LCD Mimic Panel",
-                        "Power Range and Runtime Scalability",
-                        "Maintenance Bypass Switch Embedded",
-                        "Galvanic Isolation Transformer",
-                        "Hot Swappable Battery",
-                        "Compact Design"
-                    ]
+                    img: ablerex_ms_ii_ssax,
                 },
                 {
                     id: "ablerex-kronos-40",
                     model: "Ablerex Kronos 40 40KVA / 40KW",
-                    features: [
-                        "Up to 95% efficiency in online mode",
-                        "Built-in high current battery charger (up to 7A standard charger)",
-                        "4 poles manual bypass and Breakers",
-                        "Generator compatibility with configurable ramp up",
-                        "Cold start function included",
-                        "Logfile, UPS information downloadable on SD card",
-                        "Up to 60 x 9Ah internal battery",
-                        "Wide range of battery number per string (26 to 40 pcs)",
-                        "Parallelable up to 6 units",
-                        "Wide communication: two com slots, RS232, USB, programmable dry contacts"
-                    ]
+                    img: ablerex_kronos_40,
                 },
                 {
                     id: "abb-powerscale-3-3",
                     model: "ABB Powerscale 3-3",
-                    features: [
-                        "System power range: 10 kVA – 1000 kVA",
-                        "UPS frame rated power: 10/9-15/13.5-20/18-25/22.8-30/27-40/36-50/45 kVA/kW",
-                        "UPS output rated PF: 0,9",
-                        "Max. parallel frames: Up to 20 units",
-                        "Wiring: 3ph + N + PE",
-                        "True online double conversion topology"
-                    ]
+                    img: abb_powerscale_33,
                 },
                 {
                     id: "abb-ztx-series",
                     model: "ABB ZTx SERIES",
-                    features: [
-                        "Online double conversion",
-                        "Full DSP control",
-                        "High power factor",
-                        "Optimized battery management",
-                        "N+X parallel redundancy",
-                        "Wide input adaptability",
-                        "Strong overload capability",
-                        "LBS synchronization",
-                        "Multi-protection",
-                        "User-friendly network management"
-                    ]
+                    img: abb_ztx_series,
                 }
             ],
-            link: UPSDatasheet
         },
         {
             title: "AI-Powered CCTV",
@@ -206,64 +163,34 @@ export default function OurProducts({
                 {
                     id: "vivotek-ib9368ht",
                     model: "Vivotek IB9368HT Bullet Network Camera",
-                    features: [
-                        "WDR Pro for Unparalleled Visibility",
-                        "Built-in IR Illuminators, effective up to 30 Meters",
-                        "Weather-proof IP66 & Vandal-proof IK10 Housing",
-                        "MicroSD/SDHC/SDXC Card for On-board Storage",
-                        "Cyber Protection via Trend Micro IoT Security"
-                    ]
+                    img: vivotek_ib9368ht,
                 },
                 {
                     id: "vivotek-ib9383-htv",
                     model: "Vivotek IB9383-HTV Bullet AI Camera",
-                    features: [
-                        "WDR Pro for Unparalleled Visibility",
-                        "Built-in IRs up to 30M with Smart IR III",
-                        "AI-powered Smart Motion Detection and Smart VCA",
-                        "Cyber Protection via Trend Micro IoT Security",
-                        "Signed Firmware and Secure Boot"
-                    ]
+                    img: vivotek_ib9383_htv,
                 },
                 {
                     id: "vivotek-tb9333e",
                     model: "Vivotek TB9333E Thermal Camera",
-                    features: [
-                        "Bi-spectrum Thermal with 256 x 192 thermal & 4MP",
-                        "NETD < 50 mK @ F1.0",
-                        "Video Analytics (Intrusion, Line Crossing)",
-                        "Object Classification, Trigger by human/vehicle",
-                        "Temperature Measurement & Alarms"
-                    ]
+                    img: vivotek_tb9333e,
+
                 },
                 {
                     id: "vivotek-it9380-hv-v2",
                     model: "Vivotek IT9380-HV-V2 Turret AI Camera",
-                    features: [
-                        "Detect people & vehicles with Vision Object Analytics",
-                        "Accurate alarm with Smart VCA",
-                        "Built-in IRs up to 30M with Smart IR",
-                        "Metal housing with IK10 certification",
-                        "Cyber protection via Trend Micro IoT Security"
-                    ]
+                    img: vivotek_it9380_hv_v2,
                 },
                 {
                     id: "vivotek-ib9387-lprv3",
                     model: "Vivotek IB9387-LPRV3 License Plate Recognition",
-                    features: [
-                        "Integrated with VAST2/VSS and 3rd parties",
-                        "Various Open APIs Available for Integration",
-                        "Supports Wiegand Protocol for Access Control",
-                        "Weatherproof and Vandal proof Rated Housing",
-                        "Integrated Wiegand Converter"
-                    ]
+                    img: vivotek_ib9387_lprv3,
                 }
             ],
-            link: AICCTVDatasheet
         },
         {
             title: "Fiber Optic",
-            imgs: [FO1],
+            imgs: [FO1, FO2, FO3],
             description: "High-speed fiber optic infrastructure for reliable, long-distance industrial data transmission and networking.",
             keySpecs: [
                 "High Bandwidth & Long-Distance Transmission",
@@ -275,89 +202,38 @@ export default function OurProducts({
                 {
                     id: "netviel-fo-cable",
                     model: "Netviel Fiber Optic Cable",
-                    features: [
-                        "Fiber Count up to 144",
-                        "Strain free fibers in a stranded multi loose tube design",
-                        "SZ stranding design allows for easy mid-span access",
-                        "Most common and widely used design",
-                        "Complies with international standards (ANSI, IEEE, Belcore/Telcordia, TIA/AIA, ISO/IEC)",
-                        "Suitable for access and long distance applications"
-                    ]
+                    img: netviel_fo_cable,
                 },
                 {
                     id: "netviel-sfp-transceiver",
                     model: "Netviel SFP Optical Transceiver",
-                    features: [
-                        "850nm or 1310nm wavelength",
-                        "1Gbps data rate operation",
-                        "Compliant with SFP MSA and SFF-8472",
-                        "500m transmission with 50/125μm MMF",
-                        "275m transmission with 62.5/125μm MMF",
-                        "Very low EMI and excellent ESD protection",
-                        "+3.3V single power supply",
-                        "RoHS compliant",
-                        "Operating temperature: 0°C to +70°C"
-                    ]
+                    img: netviel_sfp_transceiver,
                 },
                 {
                     id: "netviel-nvl-otb",
                     model: "Netviel NVL-OTB-WM-24/4-SM-SC-S",
-                    features: [
-                        "Rugged Case with High Security",
-                        "Wall Mounted Style",
-                        "Lock & key included",
-                        "Accepts two Snap-in Adapter Plate",
-                        "24 Ports Fiber Maximum Capacity (36 ports max for LC only)",
-                        "Initial installation kit included"
-                    ]
+                    img: netviel_nvl_otb,
                 },
                 {
                     id: "netviel-nvl-mc",
                     model: "Netviel NVL-MC-SM100-SC",
-                    features: [
-                        "Complies with IEEE 802.3 10 Base-T standard",
-                        "Complies with IEEE 802.3u 10/100 Base-TX/FX standard",
-                        "10/100 Mbps port with full/half duplex autonegotiation",
-                        "Back pressure flow control for full/half duplex",
-                        "Automatic identification of MDI/MDI-X crossline",
-                        "High-performance 155Mbps memory bandwidth",
-                        "Complies with FCC, 15 CLASS A, RoHS and CE MARK"
-                    ]
+                    img: netviel_nvl_mc,
                 },
                 {
                     id: "yokogawa-aq1000",
                     model: "Yokogawa AQ1000 OTDR",
-                    features: [
-                        "Wavelengths: 1310 / 1550 nm",
-                        "Dynamic ranges: 32 / 30 dB",
-                        "Compact size: 185mm × 116mm × 56mm",
-                        "Weight: 660g",
-                        "Multi-touch touchscreen",
-                        "One-button measurement",
-                        "Long battery operation time",
-                        "Quick boot-up"
-                    ]
+                    img: yokogawa_aq1000,
                 },
                 {
                     id: "fujikura-fsm41s",
                     model: "Fujikura Fusion Splicer FSM41S",
-                    features: [
-                        "Warm Splice Imaging (WSI) loss estimation technology",
-                        "Improved real-time arc control for fibers",
-                        "Bluetooth enabled cleaver management",
-                        "Two camera, active cladding alignment",
-                        "5\" touchscreen monitor",
-                        "Interchangeable sheath clamps and fiber holders",
-                        "Fully ruggedized for shock, moisture and dust resistance",
-                        "Extended-life electrodes, 5,000 splices"
-                    ]
+                    img: fujikura_fsm41s,
                 }
             ],
-            link: FODatasheet
         },
         {
             title: "Industrial Switch",
-            imgs: [ISG1, ISG2],
+            imgs: [ISG1, ISG2, ISG3],
             description: "Rugged network switches designed for harsh industrial environments with advanced management and redundancy features.",
             keySpecs: [
                 "Rugged Industrial Design",
@@ -369,63 +245,28 @@ export default function OurProducts({
                 {
                     id: "eki-7710g",
                     model: "Advantech EKI-7710G-2CPI-BE",
-                    features: [
-                        "8 x IEEE 802.3 af/at PoE Gigabit ports + 2 x Gigabit Copper/SFP combo ports",
-                        "SFP socket for Easy and Flexible Fiber Expansion",
-                        "Redundancy: Gigabit X-Ring Pro (recovery time < 20 ms), RSTP/STP",
-                        "IXM function enables fast deployment",
-                        "Security: 802.1x (Port-Based, MD5/TLS/TTLS/PEAP Encryption), RADIUS",
-                        "Management: SNMP v1/v2c/v3, WEB, Telnet",
-                        "-40 ~ 75°C wide-range operating temperature",
-                        "Dual 24~48 V DC power input and 1 relay output"
-                    ]
+                    img: eki_7710g,
                 },
                 {
                     id: "eki-5729pi",
                     model: "Advantech EKI-5729PI-AE",
-                    features: [
-                        "Full Gigabit Ethernet ports and IEEE 802.3af/at PoE standard",
-                        "Communicates with SCADA software via Modbus/TCP",
-                        "Communicates with NMS via SNMP",
-                        "Port-based QoS for deterministic data transmission",
-                        "-40 to 65°C operating temperature range",
-                        "IEEE 802.3az Energy Efficient Ethernet (EEE)",
-                        "Provides 5/6 Fast Ethernet ports with 8 PoE ports",
-                        "Redundant 12V~24V (9V ~ 36V) power input and P-Fail relay"
-                    ]
+                    img: eki_5729pi,
                 },
                 {
                     id: "eki-5525i",
                     model: "Advantech EKI-5525I-AE",
-                    features: [
-                        "Communicates with SCADA software via Modbus/TCP",
-                        "Communicates with NMS via SNMP",
-                        "Port-based QoS for deterministic data transmission",
-                        "-40~75°C operating temperature range",
-                        "8.4~52.8 V DC wide-range power input",
-                        "EMS level 3 protection for extreme outdoor environments",
-                        "IEEE 802.3az Energy Efficient Ethernet (EEE)",
-                        "Redundant 12~48V DC power input and P-Fail relay",
-                        "Loop detection"
-                    ]
+                    img: eki_5525i,
                 },
                 {
                     id: "moxa-eds-205",
                     model: "Moxa EDS-205",
-                    features: [
-                        "10/100BaseT(X) (RJ45 connector)",
-                        "IEEE802.3/802.3u/802.3x support",
-                        "Broadcast storm protection",
-                        "DIN-rail mounting ability",
-                        "-10 to 60°C operating temperature range"
-                    ]
+                    img: moxa_eds_205,
                 }
             ],
-            link: ISGDatasheet
         },
         {
             title: "Intelligent Connectivity",
-            imgs: [ISG1, ISG2],
+            imgs: [IC1, IC2, IC3],
             description: "Advanced connectivity solutions for seamless industrial device communication and network integration.",
             keySpecs: [
                 "Serial to Ethernet Conversion",
@@ -437,86 +278,34 @@ export default function OurProducts({
                 {
                     id: "eki-1511",
                     model: "Advantech EKI-1511",
-                    features: [
-                        "1 x 10/100 Mbps Ethernet port",
-                        "COM port redirection (Virtual COM), TCP, and UDP operation modes",
-                        "Baud rate: supports up to 230.4 Kbps",
-                        "Maximum of five hosts can access one serial port",
-                        "Maximum of 16 hosts in TCP client mode",
-                        "Built-in 8-kV ESD protection for all serial signals",
-                        "Multiple configuration methods: Windows utility and web browser",
-                        "L models support RS-232 only"
-                    ]
+                    img: eki_1511,
                 },
                 {
                     id: "eki-1528i",
                     model: "Advantech EKI-1528I-DR-AE",
-                    features: [
-                        "2 x 10/100 Mbps Ethernet ports for LAN redundancy",
-                        "COM port redirection (Virtual COM), TCP and UDP modes",
-                        "Supports up to 921.6 kbps, and any baud rate setting",
-                        "Max. of 5 hosts to access one serial port",
-                        "Max. of 16 hosts as TCP client mode",
-                        "Built-in 15 KV ESD protection for all serial signals",
-                        "Rich configuration methods: Windows utility, Telnet, Web Browser",
-                        "Automatic RS-485 data flow control",
-                        "Line to line 4 KV, line to ground 8 KV surge protection"
-                    ]
+                    img: eki_1528i,
                 },
                 {
                     id: "eki-1361",
                     model: "Advantech EKI-1361",
-                    features: [
-                        "Link any serial device to IEEE 802.11 a/b/g/n network",
-                        "Supports up to 921.6 kbps, and any baud rate setting",
-                        "COM port redirection, TCP, UDP, and pair connection modes",
-                        "Max. of 5 hosts to access one serial port",
-                        "Support 802.11n MIMO 2T2R",
-                        "WLAN transmission rate up to 300 Mbps",
-                        "Secure access with WEP, WPA/WPA2-Personal, WPA/WPA2-Enterprise",
-                        "Web-based configuration and Windows utility"
-                    ]
+                    img: eki_1361,
                 },
                 {
                     id: "ecu-1051tl",
                     model: "Advantech ECU-1051TL-R10AAE",
-                    features: [
-                        "TI Cortex A8 600MHz CPU with DDR3L 256MB RAM",
-                        "Support web service for remote on-line monitoring",
-                        "Firmware update by SD card and online update",
-                        "Data logger on SD card",
-                        "Dual SIM slots for communication redundancy",
-                        "Support MQTT Client for cloud communication",
-                        "Wide Operating temperature: -40 ~ 70°C"
-                    ]
+                    img: ecu_1051tl,
                 },
                 {
                     id: "moxa-mgate-mb3180",
                     model: "Moxa MGATE MB3180",
-                    features: [
-                        "Auto Device Routing for easy configuration",
-                        "Route by TCP port or IP address for flexible deployment",
-                        "Converts between Modbus TCP and Modbus RTU/ASCII protocols",
-                        "1 Ethernet port and 1, 2, or 4 RS-232/422/485 ports",
-                        "16 simultaneous TCP masters with up to 32 requests per master",
-                        "Easy hardware setup and configuration"
-                    ]
+                    img: moxa_mgate_mb3180,
                 },
                 {
                     id: "moxa-nport-5150a",
                     model: "Moxa NPort 5150A",
-                    features: [
-                        "IEEE 802.3af-compliant PoE power device equipment",
-                        "Speedy 3-step web-based configuration",
-                        "Surge protection for serial, Ethernet, and power",
-                        "COM port grouping and UDP multicast applications",
-                        "Screw-type power connectors for secure installation",
-                        "Real COM and TTY drivers for Windows, Linux, and macOS",
-                        "Standard TCP/IP interface and versatile TCP and UDP modes"
-                    ]
+                    img: moxa_nport_5150a,
                 }
             ],
-            link: "#"
         },
         {
             title: "Supervisory Control and Data Acquisition",
@@ -528,7 +317,6 @@ export default function OurProducts({
                 "High Availability & System Redundancy",
                 "Scalability & Cybersecurity"
             ],
-            link: "#"
         },
     ];
 
@@ -662,11 +450,11 @@ export default function OurProducts({
                                             className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
                                         >
                                             {/* Product Image */}
-                                            <div className="relative aspect-square overflow-hidden bg-gray-100">
+                                            <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0 bg-gray-100">
                                                 <img 
-                                                    src={selectedProduct.imgs[0]} 
+                                                    src={spec.img.src}
                                                     alt={spec.model}
-                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                                                 />
                                                 {/* Overlay on Hover */}
                                                 <div className="absolute inset-0 bg-gradient-to-t from-jmso-dark-blue/90 via-jmso-dark-blue/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -703,7 +491,7 @@ export default function OurProducts({
                                         href="https://wa.me/6282139940054"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="block w-full md:w-auto md:mx-auto md:max-w-md bg-gradient-to-br from-green-500 to-green-600 text-white py-4 px-8 rounded-xl font-bold text-center hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-3"
+                                        className="w-full md:w-auto md:mx-auto md:max-w-md bg-gradient-to-br from-green-500 to-green-600 text-white py-4 px-8 rounded-xl font-bold text-center hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-3"
                                     >
                                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
