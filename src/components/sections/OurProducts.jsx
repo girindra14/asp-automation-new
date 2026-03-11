@@ -540,9 +540,8 @@ export default function OurProducts({
             <div className="relative container flex flex-col items-center z-10">
                 <h2 className="jmso-heading text-jmso-dark-blue text-center mb-8 lg:mb-12" dangerouslySetInnerHTML={{ __html: headline }} />
                 <div className="w-full max-w-7xl">
-                    {/* Custom grid layout: 4 cards in first row, 3 in second row */}
+                    {/* Custom grid layout: 3 columns with last item centered */}
                     <div className="flex flex-col gap-6 lg:gap-8">
-                        {/* First row - 3 cards */}
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                             {products.map((product, index) => (
                                 <div
@@ -612,22 +611,25 @@ export default function OurProducts({
                 </div>
             </div>
 
-            {/* Modal - Updated with 2-column layout */}
+            {/* Modal - Photo Gallery Only */}
             {selectedProduct && (
                 <div
-                    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-end md:items-center justify-center p-4 animate-fadeIn"
+                    className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn"
                     onClick={() => setSelectedProduct(null)}
                 >
                     <div
-                        className="bg-white rounded-t-3xl md:rounded-3xl w-full max-w-6xl max-h-[90vh] overflow-hidden animate-slideUp shadow-2xl flex flex-col"
+                        className="bg-white rounded-3xl w-full max-w-6xl max-h-[90vh] overflow-hidden animate-scaleIn shadow-2xl flex flex-col"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        {/* Modal Header - Fixed */}
-                        <div className="bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white p-6 rounded-t-3xl md:rounded-t-3xl flex-shrink-0">
+                        {/* Modal Header */}
+                        <div className="bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white p-6 flex-shrink-0">
                             <div className="flex items-start justify-between">
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-1">{selectedProduct.title}</h3>
-                                    <p className="text-blue-100 text-sm">{selectedProduct.description}</p>
+                                <div className="flex-1">
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-2">{selectedProduct.title}</h3>
+                                    <p className="text-blue-100 text-sm md:text-base">{selectedProduct.description}</p>
+                                    <p className="text-blue-200 text-xs md:text-sm mt-3 italic">
+                                        Click on any product to view detailed specifications
+                                    </p>
                                 </div>
                                 <button
                                     onClick={() => setSelectedProduct(null)}
@@ -638,68 +640,69 @@ export default function OurProducts({
                             </div>
                         </div>
 
-                        {/* Modal Content - Scrollable */}
-                        <div className="overflow-y-auto flex-1">
+                        {/* Modal Content - Photo Grid */}
+                        <div className="overflow-y-auto flex-1 bg-gradient-to-br from-gray-50 to-gray-100">
                             <div className="p-6 md:p-8">
-                                {/* 2-Column Layout for each product variant */}
-                                <div className="space-y-8">
+                                {/* Responsive Grid based on number of items */}
+                                <div className={`grid gap-4 md:gap-6 ${
+                                    selectedProduct.detailedSpecs?.length <= 2 
+                                        ? 'grid-cols-1 md:grid-cols-2 max-w-3xl mx-auto'
+                                        : selectedProduct.detailedSpecs?.length <= 4
+                                        ? 'grid-cols-2 md:grid-cols-2 lg:grid-cols-4'
+                                        : selectedProduct.detailedSpecs?.length <= 6
+                                        ? 'grid-cols-2 md:grid-cols-3'
+                                        : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
+                                }`}>
                                     {selectedProduct.detailedSpecs?.map((spec, idx) => (
-                                        <div 
-                                            key={idx} 
-                                            className="border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-jmso-tosca transition-all duration-300 shadow-sm hover:shadow-lg"
+                                        <a
+                                            key={idx}
+                                            href={`/models/${spec.id}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
                                         >
-                                            <div className="grid md:grid-cols-[300px,1fr] gap-0">
-                                                {/* Left Column - Image and Model Name */}
-                                                <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 flex flex-col items-center justify-center border-r-2 border-gray-200">
-                                                    <div className="w-full aspect-square bg-white rounded-xl shadow-md mb-4 flex items-center justify-center overflow-hidden">
-                                                        <img 
-                                                            src={selectedProduct.imgs[0]} 
-                                                            alt={spec.model}
-                                                            className="w-full h-full object-cover"
-                                                        />
+                                            {/* Product Image */}
+                                            <div className="relative aspect-square overflow-hidden bg-gray-100">
+                                                <img 
+                                                    src={selectedProduct.imgs[0]} 
+                                                    alt={spec.model}
+                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                                />
+                                                {/* Overlay on Hover */}
+                                                <div className="absolute inset-0 bg-gradient-to-t from-jmso-dark-blue/90 via-jmso-dark-blue/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                                    <div className="text-white text-center p-4">
+                                                        <svg className="w-12 h-12 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                                        </svg>
+                                                        <p className="text-sm font-semibold">View Details</p>
                                                     </div>
-                                                    <h4 className="text-lg font-bold text-jmso-dark-blue text-center leading-tight">
-                                                        {spec.model}
-                                                    </h4>
                                                 </div>
-
-                                                {/* Right Column - Specifications */}
-                                                <div className="p-6 bg-white flex flex-col">
-                                                    <h5 className="text-sm font-bold text-jmso-dark-blue uppercase tracking-wider mb-4 flex items-center gap-2">
-                                                        <div className="w-1 h-5 bg-jmso-tosca rounded-full"></div>
-                                                        Specifications
-                                                    </h5>
-                                                    <div className="space-y-3 flex-grow">
-                                                        {spec.features.map((feature, featureIdx) => (
-                                                            <div key={featureIdx} className="flex items-start gap-3 group">
-                                                                <CheckCircle
-                                                                    size={20}
-                                                                    weight="fill"
-                                                                    className="text-jmso-tosca mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
-                                                                />
-                                                                <span className="text-sm text-gray-700 leading-relaxed">
-                                                                    {feature}
-                                                                </span>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                    {/* Learn More — always shown */}
-                                                    <a
-                                                        href={`/models/${spec.id}`}
-                                                        className="block w-full bg-gradient-to-br from-jmso-tosca to-jmso-dark-blue text-white mt-6 py-3 px-6 rounded-lg font-semibold hover:from-jmso-tosca/90 hover:to-jmso-dark-blue/90 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 text-center"
-                                                    >
-                                                        Learn More
-                                                    </a>
+                                                {/* Badge */}
+                                                <div className="absolute top-3 right-3 bg-jmso-tosca text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                                                    NEW TAB
                                                 </div>
                                             </div>
-                                        </div>
+
+                                            {/* Product Name */}
+                                            <div className="p-4 flex-1 flex items-center justify-center bg-white">
+                                                <h4 className="text-sm md:text-base font-bold text-jmso-dark-blue text-center leading-tight group-hover:text-jmso-tosca transition-colors">
+                                                    {spec.model}
+                                                </h4>
+                                            </div>
+
+                                            {/* Click Indicator */}
+                                            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-jmso-tosca to-jmso-dark-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                                        </a>
                                     ))}
                                 </div>
 
                                 {/* Contact Sales Button */}
-                                <div className="mt-8 pt-6 border-t-2 border-gray-200">
+                                <div className="mt-8 pt-6 border-t-2 border-gray-300">
                                     <a
                                         href="https://wa.me/6282139940054"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="block w-full md:w-auto md:mx-auto md:max-w-md bg-gradient-to-br from-green-500 to-green-600 text-white py-4 px-8 rounded-xl font-bold text-center hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center justify-center gap-3"
                                     >
                                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -720,17 +723,23 @@ export default function OurProducts({
                     to { opacity: 1; }
                 }
 
-                @keyframes slideUp {
-                    from { transform: translateY(100%); }
-                    to { transform: translateY(0); }
+                @keyframes scaleIn {
+                    from { 
+                        opacity: 0;
+                        transform: scale(0.9);
+                    }
+                    to { 
+                        opacity: 1;
+                        transform: scale(1);
+                    }
                 }
 
                 .animate-fadeIn {
                     animation: fadeIn 0.3s ease-out;
                 }
 
-                .animate-slideUp {
-                    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                .animate-scaleIn {
+                    animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
                 }
             `}</style>
         </section>
