@@ -1,12 +1,9 @@
 ---
 import Navbar from "../components/ui/navbar.tsx";
+import Footer from "../components/ui/footer.tsx";
 import '../styles/custom.css';
 
-export interface Props {
-  canonicalUrl: string;
-}
-
-const { canonicalUrl } = Astro.props;
+const canonicalUrl = import.meta.env.CANONICAL_URL || "http://localhost:4321";
 ---
 
 <html lang="id">
@@ -57,9 +54,8 @@ const { canonicalUrl } = Astro.props;
     <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M2JWJXN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End GTM (Google Tag Manager) (noscript) -->
-    <Navbar
-      client:load
-    />
+    <Navbar client:load/>
     <slot />
+    <Footer client:load />
   </body>
 </html>

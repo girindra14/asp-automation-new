@@ -13,6 +13,7 @@ import heroBgTablet from "../../assets/images/hero-bg-tablet.webp";
 import { useEffect } from "react";
 
 export default function Hero({
+    company_name,
     headline,
     sub_headline,
 }) {
@@ -60,7 +61,8 @@ export default function Hero({
             <div className="flex flex-col lg:flex-row items-center relative lg:min-h-[calc(100dvh-73px-84px)] container">
                 <div className="pt-12 md:pt-12 lg:py-0 w-full xl:py-24 flex justify-center">
                     <div className="flex flex-col w-full lg:max-w-5xl gap-5 items-center">
-                        <h1 className="text-center text-5xl lg:text-7xl text-white font-bold leading-none mb-5" dangerouslySetInnerHTML={{ __html: headline }} />
+                        <h1 className="text-center text-3xl lg:text-5xl text-white font-bold leading-none" dangerouslySetInnerHTML={{ __html: company_name }} />
+                        <h2 className="text-center text-5xl lg:text-7xl text-white font-bold leading-none mb-5" dangerouslySetInnerHTML={{ __html: headline }} />
                         <p className="text-center text-white text-2xl lg:text-3xl font-medium mb-5" dangerouslySetInnerHTML={{ __html: sub_headline }} />
                         <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto justify-center mb-20 md:mb-30 lg:mb-5">
                             <a

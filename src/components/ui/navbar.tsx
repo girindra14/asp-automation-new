@@ -5,11 +5,11 @@ import MobileNav from "@/components/ui/mobile-nav";
 export default function Navbar() {
     const navigation = {
         menu: [
-            { link: "#what-we-do", title: "What We Do" },
-            { link: "#why-choose-us", title: "Why Choose Us" },
-            { link: "#our-solutions", title: "Our Solutions" },
-            { link: "#our-products", title: "Our Products" },
-            { link: "#about-us", title: "About Us" },
+            { link: "/#what-we-do", title: "What We Do" },
+            { link: "/#why-choose-us", title: "Why Choose Us" },
+            { link: "/#our-solutions", title: "Our Solutions" },
+            { link: "/#our-products", title: "Our Products" },
+            { link: "/#about-us", title: "About Us" },
         ],
         contact_us: { link: "#contact-us", title: "Contact Us" },
     };

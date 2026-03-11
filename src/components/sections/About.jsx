@@ -33,7 +33,7 @@ import Cisco from "../../assets/images/partnerships/cisco.webp";
 import HanwhaVision from "../../assets/images/partnerships/hanwha-vision.webp";
 import Moxa from "../../assets/images/partnerships/moxa.webp";
 import Netviel from "../../assets/images/partnerships/netviel.webp";
-import Siemens from "../../assets/images/partnerships/siemens.webp";
+import Vivotek from "../../assets/images/partnerships/vivotek.webp";
 
 export default function AboutUs() {
     const works = [
@@ -90,7 +90,7 @@ export default function AboutUs() {
         { img: HanwhaVision },
         { img: Moxa },
         { img: Netviel },
-        { img: Siemens },
+        { img: Vivotek },
 
     ];
 
