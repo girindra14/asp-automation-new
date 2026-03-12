@@ -445,8 +445,6 @@ export default function OurProducts({
                                         <a
                                             key={idx}
                                             href={`/models/${spec.id}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
                                             className="group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex flex-col"
                                         >
                                             {/* Product Image */}
