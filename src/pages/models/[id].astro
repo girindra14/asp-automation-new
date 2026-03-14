@@ -37,18 +37,16 @@ const canonicalUrl = import.meta.env.CANONICAL_URL || "http://localhost:4321";
         <div class="container w-full">
             <div class="bg-white rounded-2xl overflow-hidden shadow-md border-2 border-gray-200 grid md:grid-cols-[1.3fr_1.7fr]">
                 <!-- Image -->
-                <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-4 flex flex-col items-center justify-center gap-4 border-b-2 md:border-b-0 md:border-r-2 border-gray-200">
-                    <div class="relative overflow-hidden flex-shrink-0 bg-white rounded-xl shadow">
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col border-b-2 md:border-b-0 md:border-r-2 border-gray-200">
+                    <div class="flex-1 overflow-hidden">
                         <img src={model.productImg.src} alt={model.model} class="w-full h-full object-contain" />
                     </div>
-                    <h2 class="text-jmso-dark-blue text-2xl font-bold text-center leading-tight">{model.model}</h2>
                 </div>
                 <!-- Specs -->
                 <div class="p-8">
-                    <p class="text-xl font-bold uppercase tracking-wider text-jmso-tosca mb-5 flex items-center gap-2">
-                        <span class="w-1 h-4 bg-jmso-tosca rounded-full inline-block"></span>
-                        Specifications
-                    </p>
+                    <div class="flex items-center gap-2 mb-5 text-jmso-tosca font-bold text-xl">
+                        <h2 class="">{model.model} Specifications</h2>
+                    </div>
                     <ul class="space-y-3 mb-8">
                         {model.features.map(f => (
                             <li class="flex items-start gap-3 text-lg text-gray-700 leading-relaxed">
