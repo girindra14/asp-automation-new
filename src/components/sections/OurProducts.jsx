@@ -464,10 +464,6 @@ export default function OurProducts({
                                                         <p className="text-sm font-semibold">View Details</p>
                                                     </div>
                                                 </div>
-                                                {/* Badge */}
-                                                <div className="absolute top-3 right-3 bg-jmso-tosca text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                                                    NEW TAB
-                                                </div>
                                             </div>
 
                                             {/* Product Name */}
