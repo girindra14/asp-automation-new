@@ -26,7 +26,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     await transporter.sendMail({
       from: `"${name}" <noreply@asp-automation.com>`,
-      to: "guntruaji852@gmail.com",
+      to: "gunturaji852@gmail.com",
       replyTo: email,
       subject: `New Inquiry from ${name} — ${company}`,
       html: `

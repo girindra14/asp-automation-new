@@ -15,7 +15,7 @@ export default function ContactWithFooter() {
         message: "",
     });
 
-    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const [status, setStatus] = useState("idle");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
