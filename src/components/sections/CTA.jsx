@@ -8,7 +8,7 @@ export default function CTA({
 }) {
     return (
         <section id="cta" className="container relative z-10">
-            <a href="#contact-us">
+            <a href="/#contact-us">
                 <div className="shadow-md">
                     <div className="rounded-xl relative overflow-hidden bg-jmso-dark-blue">
                         {/* <img

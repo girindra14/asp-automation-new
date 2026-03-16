@@ -37,7 +37,7 @@ export default function Navbar() {
                 </nav>
                 <div className="flex gap-4 items-center">
                     {/* <LangSwitcher currentLang={lang} client:load /> */}
-                    <a href="#contact-us">
+                    <a href="/#contact-us">
                         <Button
                             size="default"
                             className="hidden lg:block leading-none"
@@ -80,7 +80,7 @@ export default function Navbar() {
                     />
                 </div>
                 <div className="flex">
-                    <a href="#contact-us">
+                    <a href="/#contact-us">
                         <Button size="default" className="hidden lg:block">
                             Contact Us
                         </Button>

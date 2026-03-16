@@ -55,7 +55,7 @@ export default function MobileNav({
                         )
                     )}
                     <li>
-                        <a href={`#contact-us`}>
+                        <a href={`/#contact-us`}>
                             <Button
                                 className="w-full"
                                 onClick={() => setMenuOpen(false)}

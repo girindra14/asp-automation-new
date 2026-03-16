@@ -66,7 +66,7 @@ export default function Hero({
                         <p className="text-center text-white text-2xl lg:text-3xl font-medium mb-5" dangerouslySetInnerHTML={{ __html: sub_headline }} />
                         <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto justify-center mb-20 md:mb-30 lg:mb-5">
                             <a
-                                href="#contact-us"
+                                href="/#contact-us"
                                 className="px-8 py-4 bg-jmso-tosca hover:bg-jmso-tosca/90 text-jmso-dark-blue font-bold text-xl lg:text-2xl rounded-lg transition-all duration-300 text-center shadow-lg hover:shadow-xl hover:scale-105"
                             >
                                 Request a Consultation
