@@ -11,7 +11,7 @@ export default function Navbar() {
             { link: "/#our-products", title: "Our Products" },
             { link: "/#about-us", title: "About Us" },
         ],
-        contact_us: { link: "#contact-us", title: "Contact Us" },
+        contact_us: { link: "/#contact-us", title: "Contact Us" },
     };
     return (
         <header className="w-full py-4 border-b border-black/10 bg-white sticky top-0 z-50">
