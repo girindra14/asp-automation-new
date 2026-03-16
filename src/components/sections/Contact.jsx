@@ -15,11 +15,30 @@ export default function ContactWithFooter() {
         message: "",
     });
 
-    const handleSubmit = (e) => {
+    const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const { name, email, company, message } = formData;
-        const mailtoLink = `mailto:sales@asp-automation.com?subject=Contact from ${name} - ${company}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0ACompany: ${company}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-        window.location.href = mailtoLink;
+        setStatus("loading");
+
+        try {
+            const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+            });
+
+            const result = await res.json();
+
+            if (result.success) {
+            setStatus("success");
+            setFormData({ name: "", email: "", company: "", message: "" });
+            } else {
+            setStatus("error");
+            }
+        } catch {
+            setStatus("error");
+        }
     };
 
     const handleChange = (e) => {
@@ -139,14 +158,26 @@ export default function ContactWithFooter() {
 
                                 <button
                                     type="submit"
+                                    disabled={status === "loading"}
                                     className="w-full bg-jmso-tosca hover:bg-jmso-tosca/90 text-jmso-dark-blue font-semibold py-3 px-6 rounded-md transition-all duration-300 flex items-center justify-center gap-2 group"
                                 >
-                                    <span>Send Message</span>
+                                    <span>{status === "loading" ? "Sending..." : "Send Message"}</span>
                                     <PaperPlaneTilt
                                         size={20}
                                         className="group-hover:translate-x-1 transition-transform"
                                     />
                                 </button>
+
+                                {status === "success" && (
+                                    <p className="text-green-600 text-sm text-center">
+                                        ✅ Message sent! We'll be in touch soon.
+                                    </p>
+                                )}
+                                {status === "error" && (
+                                    <p className="text-red-500 text-sm text-center">
+                                        ❌ Something went wrong. Please try again.
+                                    </p>
+                                )}
                             </form>
                         </div>
 
