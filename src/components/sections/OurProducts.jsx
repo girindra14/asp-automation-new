@@ -41,6 +41,7 @@ import eki_7710g from "../../assets/images/our-products/isg/eki_7710g.png";
 import eki_5729pi from "../../assets/images/our-products/isg/eki_5729pi.png";
 import eki_5525i from "../../assets/images/our-products/isg/eki_5525i.png";
 import moxa_eds_205 from "../../assets/images/our-products/isg/moxa_eds_205.png";
+import moxa_eds_408a from "../../assets/images/our-products/isg/moxa_eds_408a.png";
 import IC1 from "../../assets/images/our-products/ic/ic_1.png";
 import IC2 from "../../assets/images/our-products/ic/ic_2.png";
 import IC3 from "../../assets/images/our-products/ic/ic_3.png";
@@ -91,27 +92,27 @@ export default function OurProducts({
             detailedSpecs: [
                 {
                     id: "advantech-acp-4320",
-                    model: "Advantech ACP-4320",
+                    model: "ACP-4320",
                     img: advantech_acp_4320,
                 },
                 {
                     id: "advantech-ppc-6171c",
-                    model: "Advantech PPC-6171C-RTAE",
+                    model: "PPC-6171C-RTAE",
                     img: advantech_ppc_6171c,
                 },
                 {
                     id: "advantech-uno-247",
-                    model: "Advantech UNO-247",
+                    model: "UNO-247",
                     img: advantech_uno_247,
                 },
                 {
                     id: "advantech-ipc-510",
-                    model: "Advantech IPC-510",
+                    model: "IPC-510",
                     img: advantech_ipc_510,
                 },
                 {
                     id: "advantech-mic-7700h",
-                    model: "Advantech MIC-7700H-00A2",
+                    model: "MIC-7700H-00A2",
                     img: advantech_mic_7700h,
                 }
             ],
@@ -129,22 +130,22 @@ export default function OurProducts({
             detailedSpecs: [
                 {
                     id: "ablerex-ms-ii-ssax",
-                    model: "Ablerex MS II SSAX",
+                    model: "MS II SSAX",
                     img: ablerex_ms_ii_ssax,
                 },
                 {
                     id: "ablerex-kronos-40",
-                    model: "Ablerex Kronos 40 40KVA / 40KW",
+                    model: "Kronos 40 40KVA / 40KW",
                     img: ablerex_kronos_40,
                 },
                 {
                     id: "abb-powerscale-3-3",
-                    model: "ABB Powerscale 3-3",
+                    model: "Powerscale 3-3",
                     img: abb_powerscale_33,
                 },
                 {
                     id: "abb-ztx-series",
-                    model: "ABB ZTx SERIES",
+                    model: "ZTx SERIES",
                     img: abb_ztx_series,
                 }
             ],
@@ -162,28 +163,28 @@ export default function OurProducts({
             detailedSpecs: [
                 {
                     id: "vivotek-ib9368ht",
-                    model: "Vivotek IB9368HT Bullet Network Camera",
+                    model: "IB9368HT Bullet Network Camera",
                     img: vivotek_ib9368ht,
                 },
                 {
                     id: "vivotek-ib9383-htv",
-                    model: "Vivotek IB9383-HTV Bullet AI Camera",
+                    model: "IB9383-HTV Bullet AI Camera",
                     img: vivotek_ib9383_htv,
                 },
                 {
                     id: "vivotek-tb9333e",
-                    model: "Vivotek TB9333E Thermal Camera",
+                    model: "TB9333E Thermal Camera",
                     img: vivotek_tb9333e,
 
                 },
                 {
                     id: "vivotek-it9380-hv-v2",
-                    model: "Vivotek IT9380-HV-V2 Turret AI Camera",
+                    model: "IT9380-HV-V2 Turret AI Camera",
                     img: vivotek_it9380_hv_v2,
                 },
                 {
                     id: "vivotek-ib9387-lprv3",
-                    model: "Vivotek IB9387-LPRV3 License Plate Recognition",
+                    model: "IB9387-LPRV3 License Plate Recognition",
                     img: vivotek_ib9387_lprv3,
                 }
             ],
@@ -201,32 +202,32 @@ export default function OurProducts({
             detailedSpecs: [
                 {
                     id: "netviel-fo-cable",
-                    model: "Netviel Fiber Optic Cable",
+                    model: "Fiber Optic Cable",
                     img: netviel_fo_cable,
                 },
                 {
                     id: "netviel-sfp-transceiver",
-                    model: "Netviel SFP Optical Transceiver",
+                    model: "SFP Optical Transceiver",
                     img: netviel_sfp_transceiver,
                 },
                 {
                     id: "netviel-nvl-otb",
-                    model: "Netviel NVL-OTB-WM-24/4-SM-SC-S",
+                    model: "NVL-OTB-WM-24/4-SM-SC-S",
                     img: netviel_nvl_otb,
                 },
                 {
                     id: "netviel-nvl-mc",
-                    model: "Netviel NVL-MC-SM100-SC",
+                    model: "NVL-MC-SM100-SC",
                     img: netviel_nvl_mc,
                 },
                 {
                     id: "yokogawa-aq1000",
-                    model: "Yokogawa AQ1000 OTDR",
+                    model: "AQ1000 OTDR",
                     img: yokogawa_aq1000,
                 },
                 {
                     id: "fujikura-fsm41s",
-                    model: "Fujikura Fusion Splicer FSM41S",
+                    model: "Fusion Splicer FSM41S",
                     img: fujikura_fsm41s,
                 }
             ],
@@ -244,23 +245,28 @@ export default function OurProducts({
             detailedSpecs: [
                 {
                     id: "eki-7710g",
-                    model: "Advantech EKI-7710G-2CPI-BE",
+                    model: "EKI-7710G-2CPI-BE",
                     img: eki_7710g,
                 },
                 {
                     id: "eki-5729pi",
-                    model: "Advantech EKI-5729PI-AE",
+                    model: "EKI-5729PI-AE",
                     img: eki_5729pi,
                 },
                 {
                     id: "eki-5525i",
-                    model: "Advantech EKI-5525I-AE",
+                    model: "EKI-5525I-AE",
                     img: eki_5525i,
                 },
                 {
                     id: "moxa-eds-205",
-                    model: "Moxa EDS-205",
+                    model: "EDS-205",
                     img: moxa_eds_205,
+                },
+                {
+                    id: "moxa-eds-408a",
+                    model: "EDS-408A",
+                    img: moxa_eds_408a,
                 }
             ],
         },
@@ -277,32 +283,32 @@ export default function OurProducts({
             detailedSpecs: [
                 {
                     id: "eki-1511",
-                    model: "Advantech EKI-1511",
+                    model: "EKI-1511",
                     img: eki_1511,
                 },
                 {
                     id: "eki-1528i",
-                    model: "Advantech EKI-1528I-DR-AE",
+                    model: "EKI-1528I-DR-AE",
                     img: eki_1528i,
                 },
                 {
                     id: "eki-1361",
-                    model: "Advantech EKI-1361",
+                    model: "EKI-1361",
                     img: eki_1361,
                 },
                 {
                     id: "ecu-1051tl",
-                    model: "Advantech ECU-1051TL-R10AAE",
+                    model: "ECU-1051TL-R10AAE",
                     img: ecu_1051tl,
                 },
                 {
                     id: "moxa-mgate-mb3180",
-                    model: "Moxa MGATE MB3180",
+                    model: "MGATE MB3180",
                     img: moxa_mgate_mb3180,
                 },
                 {
                     id: "moxa-nport-5150a",
-                    model: "Moxa NPort 5150A",
+                    model: "NPort 5150A",
                     img: moxa_nport_5150a,
                 }
             ],
